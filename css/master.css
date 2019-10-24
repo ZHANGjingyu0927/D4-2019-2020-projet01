@@ -1,0 +1,127 @@
+/* Ceci est un commentaire en CSS - Les navigateurs ignorent les commentaires.
+De cette manière nous pouvons laisser des messages pour d'autres codeurs et des explications de ce que nous avons fait. */
+
+/* Dans les 4 selectors suivants nous allons travailler sur la navigation de notre page.
+
+Nous découvrons ici la possibilité d'utiliser des selectors composés ex : header ul  Ceci permet, par exemple, de cibler les elements de la liste du header sans affecter ceux du footer.
+ */
+header {
+  background:  #fcc143;
+  padding: 1px;
+}
+
+header ul {
+  list-style-type: none;
+  font-family:'055-CAI978', sans-serif;
+  padding : 0;
+}
+
+section{
+  display: flex;
+  background-color: #fcc143;
+}
+
+section ul {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bee{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fcc143;
+}
+
+.logo{
+  height: 100%;
+  width: 100%;
+
+}
+
+header a {
+  text-decoration: none;
+  color : #ffffff;
+  padding: 5px;
+  display: block;
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+/* A noter ici :
+1. L'utilisation d'une class sur la div, nous la ciblons ici dans la CSS au moyen d'un point .
+2. l'utilisation de background image et de background size
+3. une hauteur minimal à la div. (pour comprendre ce qu'est une VH : https://css-tricks.com/the-lengths-of-css/)
+*/
+section{
+  display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+
+
+  .textcintent{flex-basis: 180px;}
+.hero {
+  background: rgb(141,170,77) url('images/bg-xl-1440.jpg') top center no-repeat;
+  color : #6b0808;
+  min-height: 40vh;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h2 {
+  background: #fcc143;;
+
+}
+/* Sur les sections :
+1. Nous utilisons encore une hauteur minimale pour faciliter la lecture et le rythme vertical de la page.
+2. Nous utilsons des classes pour permettre d'aleterner visuellement les sections.
+*/
+section {
+  min-height: 20vh;
+  padding: 42px;
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.odd {
+  background: #fcc143;
+}
+
+.even {
+  background: #fcc143;;
+}
+
+/* Nous souhaitons que les images soient responsives... c'est à dire n'éxcèdent pas une certaine largeur ET se redimensionnent avec leur parent */
+
+footer {
+  min-height: 200px;
+  background: #fcc143;
+  color : #000;
+}
+
+
+/*
+
+// Small devices
+
+// Medium devices (landscape phones, 576px and up)
+@media (min-width: 640px) { ... }
+
+// Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// Extra large devices
+
+@media (min-width: 1440px) { ... }
+
+*/

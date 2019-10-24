@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Fahkwang|Space+Mono');
+
+html {
+  font-size: 1.3em;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  font-weight: 200;
+  line-height: 3;
+}
